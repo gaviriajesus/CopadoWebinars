@@ -1,52 +1,35 @@
-# Prerequisites
-*.d
+#package.xml file is recreated on the fly by Copado, no need to track unnecessary changes of this file
+package.xml
 
-# Object files
-*.o
-*.ko
-*.obj
-*.elf
+#Managed packages can trigger the installation or uninstallation of applications, it is  
+#recommended to manage this outside git
 
-# Linker output
-*.ilk
-*.map
-*.exp
+installedPackages/*
 
-# Precompiled Headers
-*.gch
-*.pch
+#if you are not customizing a managed package, you can keep your repository clean by ignoring 
+#all files for that package. For example, to ignore all files of the "Copado" managed package
+#just add to your gitignore file the following text: *copado__*
+#if you will be customizing managed packages, make sure that the same version of the package 
+#is installed on all your environments so that deployments will only update existing 
+#managed components. Creation of managed components is not permitted by the API.
+#It is recommended that you ignore managed components that cannot be modified 
+#since there is no need to track them in Git, like for example:
 
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
+classes/copado__*
+triggers/copado__*
+pages/copado__*
 
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
+#Translations are complex since get updated indirectly across multiple files, they can make a deployment fail
+#if a field is translated in source and it doesn't exist on destination. 
+#If you are committing incrementally new fields and new Translations you can track them in Git, just be careful. 
+#If you choose  to ignore them in Git, you can always create a deployment with the Copado Deployer "Translation" Step. 
 
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
+# translations/*
+# objectTranslations/*
 
-# Debug files
-*.dSYM/
-*.su
-*.idb
-*.pdb
+#Sites which has Domain mapping has environment specific information. 
+#Make sure you setup Copado Environment Variables to make sites config files environment agnostic.
+#Until the above is achieved, you can ignore them as follows
 
-# Kernel Module Compile Results
-*.mod*
-*.cmd
-.tmp_versions/
-modules.order
-Module.symvers
-Mkfile.old
-dkms.conf
+# sites/*
+# siteDotComSites/*
