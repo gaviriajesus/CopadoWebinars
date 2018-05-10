@@ -205,7 +205,7 @@
         <fullName>test__c</fullName>
         <externalId>false</externalId>
         <label>test</label>
-        <length>10</length>
+        <length>20</length>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <type>Text</type>
