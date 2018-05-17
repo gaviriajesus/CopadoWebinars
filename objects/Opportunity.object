@@ -45,6 +45,7 @@
     <enableHistory>false</enableHistory>
     <fields>
         <fullName>ABC__c</fullName>
+        <description>Description</description>
         <externalId>false</externalId>
         <label>ABC</label>
         <required>false</required>
