@@ -202,6 +202,16 @@
         <trackFeedHistory>false</trackFeedHistory>
     </fields>
     <fields>
+        <fullName>pacific__c</fullName>
+        <externalId>false</externalId>
+        <label>pacific</label>
+        <length>250</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>test__c</fullName>
         <externalId>false</externalId>
         <label>test</label>
