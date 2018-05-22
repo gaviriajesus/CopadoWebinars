@@ -155,6 +155,16 @@
         <type>Picklist</type>
     </fields>
     <fields>
+        <fullName>Red_Hat__c</fullName>
+        <externalId>false</externalId>
+        <label>Red Hat</label>
+        <length>20</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>ShippingAddress</fullName>
         <trackFeedHistory>false</trackFeedHistory>
     </fields>
