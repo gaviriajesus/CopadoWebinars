@@ -71,7 +71,7 @@
         <fullName>AAA__c</fullName>
         <externalId>false</externalId>
         <label>AAA</label>
-        <length>100</length>
+        <length>150</length>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <type>Text</type>
