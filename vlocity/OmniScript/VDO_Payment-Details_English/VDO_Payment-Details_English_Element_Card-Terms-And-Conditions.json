@@ -1,0 +1,37 @@
+{
+    "%vlocity_namespace%__Active__c": true,
+    "%vlocity_namespace%__Level__c": 2,
+    "%vlocity_namespace%__OmniScriptId__c": {
+        "Name": "Payment Details",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__OmniScript__c/VDO/Payment Details/English",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__OmniScript__c"
+    },
+    "%vlocity_namespace%__Order__c": 8,
+    "%vlocity_namespace%__ParentElementId__c": {
+        "%vlocity_namespace%__OmniScriptId__c": "%vlocity_namespace%__OmniScript__c/VDO/Payment Details/English",
+        "Name": "Card Details",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__Element__c/%vlocity_namespace%__OmniScript__c/VDO/Payment Details/English/Card Details",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__Element__c"
+    },
+    "%vlocity_namespace%__ParentElementName__c": "Card Details",
+    "%vlocity_namespace%__ParentElementType__c": "Block",
+    "%vlocity_namespace%__PropertySet__c": {
+        "accessibleInFutureSteps": false,
+        "checkLabel": "I have read and understood the above statement.",
+        "conditionType": "Hide if False",
+        "controlWidth": 12,
+        "label": "Card Payment Terms And Conditions",
+        "readOnly": false,
+        "required": false,
+        "show": null,
+        "text": "Using the online payment facilities on our website indicates that you accept these terms. If you do not accept these terms do not use our online payment facilities. All online payments are subject to these conditions. Your payment will normally reach our bank account within two working days. We cannot accept any liability for delayed payments. We cannot accept liability for payments being recorded on the wrong account if you supply inaccurate information, but will make every effort to reallocate any such payments if they arise. We cannot accept liability if payment is refused or declined by your credit/debit card supplier for any reason. If your card supplier declines payment, we are under no obligation to bring this fact to your attention. You should check with your bank/credit/debit card supplier that payment has been deducted from your account."
+    },
+    "%vlocity_namespace%__ReusableOmniScript__c": true,
+    "%vlocity_namespace%__Type__c": "Disclosure",
+    "Name": "Card Terms And Conditions",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "%vlocity_namespace%__Element__c",
+    "VlocityRecordSourceKey": "%vlocity_namespace%__Element__c/%vlocity_namespace%__OmniScript__c/VDO/Payment Details/English/Card Terms And Conditions"
+}
