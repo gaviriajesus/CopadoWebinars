@@ -1,0 +1,93 @@
+{
+    "%vlocity_namespace%__Active__c": false,
+    "%vlocity_namespace%__Level__c": 1,
+    "%vlocity_namespace%__OmniScriptId__c": {
+        "Name": "ClockIn",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__OmniScript__c/VPL/Home Page/English",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__OmniScript__c"
+    },
+    "%vlocity_namespace%__Order__c": 2,
+    "%vlocity_namespace%__ParentElementId__c": {
+        "%vlocity_namespace%__OmniScriptId__c": "%vlocity_namespace%__OmniScript__c/VPL/Home Page/English",
+        "Name": "HomePage",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__Element__c/%vlocity_namespace%__OmniScript__c/VPL/Home Page/English/HomePage",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__Element__c"
+    },
+    "%vlocity_namespace%__ParentElementName__c": "HomePage",
+    "%vlocity_namespace%__ParentElementType__c": "Step",
+    "%vlocity_namespace%__PropertySet__c": {
+        "HTMLTemplateId": "",
+        "accessibleInFutureSteps": false,
+        "conditionType": "Hide if False",
+        "controlWidth": 3,
+        "controllingField": {
+            "element": "",
+            "source": "",
+            "type": ""
+        },
+        "help": false,
+        "helpText": "",
+        "hide": false,
+        "label": null,
+        "optionSource": {
+            "source": "",
+            "type": ""
+        },
+        "options": [
+            {
+                "autoAdv": null,
+                "name": "Lunch Break",
+                "value": "Lunch Break"
+            },
+            {
+                "autoAdv": null,
+                "imgId": null,
+                "name": "Clocked In",
+                "value": "Available"
+            },
+            {
+                "autoAdv": null,
+                "imgId": null,
+                "name": "Clocked Out",
+                "value": "Logged Out"
+            },
+            {
+                "autoAdv": null,
+                "imgId": null,
+                "name": "Pending Break",
+                "value": "Pending Break"
+            },
+            {
+                "autoAdv": null,
+                "imgId": null,
+                "name": "Break",
+                "value": "Break"
+            },
+            {
+                "autoAdv": null,
+                "imgId": null,
+                "name": "Off Duty",
+                "value": "Off Duty"
+            },
+            {
+                "autoAdv": null,
+                "imgId": null,
+                "name": "Holiday",
+                "value": "Holiday"
+            }
+        ],
+        "readOnly": false,
+        "repeat": false,
+        "repeatClone": false,
+        "required": false,
+        "show": null
+    },
+    "%vlocity_namespace%__ReusableOmniScript__c": true,
+    "%vlocity_namespace%__Type__c": "Select",
+    "Name": "ChangeStatus",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "%vlocity_namespace%__Element__c",
+    "VlocityRecordSourceKey": "%vlocity_namespace%__Element__c/%vlocity_namespace%__OmniScript__c/VPL/Home Page/English/ChangeStatus"
+}

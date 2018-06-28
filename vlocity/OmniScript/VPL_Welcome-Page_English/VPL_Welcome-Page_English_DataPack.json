@@ -1,0 +1,21 @@
+{
+    "%vlocity_namespace%__AdditionalInformation__c": "Display a welcome page for the retail user.",
+    "%vlocity_namespace%__Element__c": [
+        "VPL_Welcome-Page_English_Element_HomePage-2.json",
+        "VPL_Welcome-Page_English_Element_Welcome.json",
+        "VPL_Welcome-Page_English_Element_WelcomeClockIn.json",
+        "VPL_Welcome-Page_English_Element_getUserDetails.json"
+    ],
+    "%vlocity_namespace%__IsActive__c": true,
+    "%vlocity_namespace%__IsProcedure__c": false,
+    "%vlocity_namespace%__IsReusable__c": false,
+    "%vlocity_namespace%__Language__c": "English",
+    "%vlocity_namespace%__PropertySet__c": "VPL_Welcome-Page_English_PropertySet.json",
+    "%vlocity_namespace%__SubType__c": "Welcome Page",
+    "%vlocity_namespace%__TestHTMLTemplates__c": "VPL_Welcome-Page_English_HTMLTemplates.html",
+    "%vlocity_namespace%__Type__c": "VPL",
+    "Name": "WelcomePage",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "%vlocity_namespace%__OmniScript__c",
+    "VlocityRecordSourceKey": "%vlocity_namespace%__OmniScript__c/VPL/Welcome Page/English"
+}
