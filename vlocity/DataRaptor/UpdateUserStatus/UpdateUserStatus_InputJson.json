@@ -1,0 +1,26 @@
+{
+    "ContextId": null,
+    "HomePage": {
+        "UserInStatus": null,
+        "UserName": null,
+        "UserRole": null,
+        "UserStatus": null,
+        "UserStatusInput": null
+    },
+    "timeStamp": null,
+    "userId": null,
+    "userName": null,
+    "userProfile": null,
+    "vlcPersistentComponent": {
+    },
+    "vlcTimeTracking": {
+        "CheckAppointments": null,
+        "GetOffers": null,
+        "GetQueuedCustomers": null,
+        "GetUserDetails": null,
+        "HomePage": null,
+        "SetUserContext": null,
+        "SetUserValues": null,
+        "UpdateUserStatus": null
+    }
+}

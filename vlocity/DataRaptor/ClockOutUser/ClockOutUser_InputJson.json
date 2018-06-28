@@ -1,0 +1,36 @@
+{
+    "ContextId": null,
+    "HomePage": {
+        "ChangeStatus": null,
+        "CustomersInQueue": {
+            "CustomersInQueueDetails": null
+        },
+        "ListofAppointments": {
+            "UserCheckInAppontments": null
+        },
+        "getBreakDetails": {
+            "BreakDetails": null
+        },
+        "getOfferInfo": {
+            "getOfferDetailsInfo": null
+        }
+    },
+    "timeStamp": null,
+    "userId": null,
+    "userName": null,
+    "userProfile": null,
+    "vlcPersistentComponent": {
+    },
+    "vlcTimeTracking": {
+        "CheckAppointments": null,
+        "GetOffers": null,
+        "GetQueuedCustomers": null,
+        "GetUserDetails": null,
+        "HomePage": null,
+        "ResetUserStatus": null,
+        "SetUserContext": null,
+        "SetUserValues": null,
+        "UpdateUserStatus": null,
+        "getUserBreakDetails": null
+    }
+}
