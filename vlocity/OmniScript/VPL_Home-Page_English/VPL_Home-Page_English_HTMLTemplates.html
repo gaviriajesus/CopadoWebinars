@@ -1,0 +1,321 @@
+<style>
+html, body, .vlocity.via-slds, #VlocityBPView > .slds-col {
+	height: 100%;
+}
+
+body {
+	margin: 0;
+	background-color: #FFF;
+}
+
+sidebar.slds-col--padded.slds-cleafix {
+	display: none;
+}
+
+.vlocity.via-slds .vlc-slds-bpTree-step-chart__container {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: 0;
+}
+
+.vlocity.via-slds .vlc-slds-bpTree-step-chart__container > bptree {
+	flex-shrink: 0;
+}
+
+.vlocity.via-slds .vlc-slds-bpTree-step-chart__container > .vlc-slds-right--panel {
+	padding-right: 0;
+}
+
+.vlocity.via-slds .vlc-slds-step--container {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+}
+.vlocity.via-slds .vlc-slds-step--container .step-step {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: auto;
+	height: auto;
+	min-height: auto;
+}
+
+.vlocity.via-slds .slds-page-header.vlc-slds-page--header {
+	padding-left: 0;
+}
+
+.vlocity.via-slds form[stepform] {
+	position: absolute;
+	top: 5.6rem;
+	bottom: 0;
+	height: auto;
+	min-height: auto;
+
+	padding: 0;
+	border-right: none;
+}
+
+.vlocity.via-slds form[stepform] > div:first-child {
+	position: absolute;
+	top: 0;
+	bottom: 7em;
+	left: 2em;
+	right: 0;
+	width: auto;
+	height: auto;
+	overflow: auto;
+}
+
+.vlocity.via-slds form[stepform] > div:last-child {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+
+	/*
+	 * For some reason position fixed isn't working so the width of the right
+	 * column is calculated as a percentage of the width of left column. That
+	 * measurement is used to extend the button bar beyond the right edge of it's
+	 * container to the right edge of the screen.
+	 *
+	 * w = width of container,
+	 * lw = 0.7w,
+	 * rw = 0.3w
+	 *
+	 * lw * x = rw
+	 *      x = rw/lw
+	 *      x = 0.3w / 0.7w
+	 *      x = .3 / .7 ~= .428 = 42.8%
+	 */
+	right: -42.8%;
+
+	height: 7em;
+	width: auto;
+
+	margin: 0;
+}
+
+.vlocity.via-slds .slds-page-header__title.vlc-slds-page-header__title {
+	padding-left: 1em;
+
+	font-size: 2.2em;
+	font-weight: lighter;
+	text-transform: uppercase;
+	color: #001C3F;
+}
+
+.vlocity.via-slds .vlc-slds-right--panel .vlc-slds-step-chart--title:first-child {
+	display: none;
+}
+
+.vlocity.via-slds .vlc-slds-right--panel .list-group.vertical-steps {
+	padding-top: 3.75rem;
+}
+
+.vlocity.via-slds .vlc-slds-button--footer {
+	height: 100%;
+	align-items: center;
+
+	background-color: #F4F6F9;
+	padding-left: 1.5em;
+}
+
+.vlocity.via-slds .vlc-slds-button--footer .vlc-slds-button--tertiary {
+	margin: 0 1em 0 0;
+	padding: 0.5em 1em;
+	color: #0070D2;
+	background-color: #FFF;
+	border: 1px solid #D8DDE6;
+	border-radius: 3px;
+}
+
+.vlocity.via-slds .slds-table {
+	table-layout: fixed;
+	font-size: 0.8em;
+}
+
+.welcome-message {
+	padding-top: 1em;
+}
+
+.welcome-message .shift-start, .welcome-message .assignment {
+	margin-bottom: 1.5em;
+}
+
+#BreakDetails label[for=BreakDetails],
+#CustomersInQueueDetails label[for=CustomersInQueueDetails],
+#getOfferDetailsInfo label[for=getOfferDetailsInfo]
+{
+	display: none;
+}
+
+#BreakDetails .ng-scope,
+#CustomersInQueueDetails .ng-scope,
+#getOfferDetailsInfo .ng-scope {
+	flex-grow: 1;
+}
+
+.panel-group {
+	padding-top: 8%;
+}
+.vlocity .vlc-form-group {
+	text-transform: none;
+	display: block;
+}
+
+.vlocity .btn-primary {
+	background-color:#57a708;
+	border-color: #f5f6f7;
+}
+</style>
+<body>
+
+
+<script type="text/ng-template" id="CustomerInQueue.html">
+<div>
+<table class="slds-table slds-table--bordered slds-table--cell-buffer vlc-slds-table" title="Customers In Queue">
+
+	<thead>
+		<tr class="slds-text-heading--label">
+			<th class="slds-truncate">Customer</th>
+			<th class="slds-truncate">Rank In Queue</th>
+			<th class="slds-truncate">Business Site</th>
+			<th class="slds-truncate">Status</th>
+			<th class="slds-truncate">Type</th>
+		</tr>
+	</thead>
+
+	<tbody>
+		<tr ng-repeat = 'p in control.vlcSI[control.itemsKey]' ng-class="{ 'vlc-selectableitem-selected' : p.selected }">
+			<td class="slds-truncate">{{p.Customer}}</td>
+			<td class="slds-truncate slds-text-align--center">{{p.RankInQueue}}</td>
+			<td class="slds-truncate">{{p.BusinessSite}}</td>
+			<td class="slds-truncate">{{p.Status}}</td>
+			<td class="slds-truncate">{{p.Type}}</td>
+		</tr>
+	</tbody>
+
+</table>
+</div>
+</script>
+
+<script type = "text/ng-template" id="retailappClockIn.html">
+<div>
+
+<table class="slds-table slds-table--bordered slds-table--cell-buffer vlc-slds-table" title="Appointments">
+
+	<thead>
+		<tr class="slds-text-heading--label">
+			<th class="slds-truncate">Duration</th>
+			<th class="slds-truncate">Start</th>
+			<th class="slds-truncate">Subject</th>
+			<th class="slds-truncate">Type</th>
+			<th class="slds-truncate">End</th>
+		</tr>
+	</thead>
+
+	<tbody>
+		<tr ng-repeat = 'p in control.vlcSI[control.itemsKey]' ng-class="{ 'vlc-selectableitem-selected' : p.selected }">
+			<td class="slds-truncate">{{p.Duration}}</td>
+			<td class="slds-truncate">{{p.Start}}</td>
+			<td class="slds-truncate">{{p.Subject}}</td>
+			<td class="slds-truncate">{{p.Type}}</td>
+			<td class="slds-truncate">{{p.End}}</td>
+		</tr>
+	</tbody>
+
+</table>
+</div>
+
+</script>
+
+<script type = "text/ng-template" id="getBreakDetails.html">
+<div>
+
+<table class="slds-table slds-table--bordered slds-table--cell-buffer vlc-slds-table" title="Break Times">
+
+	<thead>
+		<tr class="slds-text-heading--label">
+			<th class="slds-truncate">Time Slot</th>
+			<th class="slds-truncate">Break</th>
+		</tr>
+	</thead>
+
+	<tbody>
+		<tr ng-repeat = 'p in control.vlcSI[control.itemsKey]' ng-class="{ 'vlc-selectableitem-selected' : p.selected }">
+			<td class="slds-truncate">{{p.Slot}}</td>
+			<td class="slds-truncate">{{p.Break}}</td>
+		</tr>
+	</tbody>
+</table>
+
+</div>
+
+</script>
+
+<script type = "text/ng-template" id="getOfferDeatilsInfo.html">
+<div >
+
+<table class="slds-table slds-table--bordered slds-table--cell-buffer vlc-slds-table" title ="Appointments">
+
+	<thead>
+		<tr class="slds-text-heading--label">
+			<th class="slds-truncate">Offer</th>
+			<th class="slds-truncate">Offer Code</th>
+			<th class="slds-truncate">Discount</th>
+			<th class="slds-truncate">Active</th>
+			<th class="slds-truncate">End Date</th>
+		</tr>
+	</thead>
+
+	<tbody>
+		<tr ng-repeat='p in control.vlcSI[control.itemsKey]' ng-class="{ 'vlc-selectableitem-selected' : p.selected }">
+			<td class="slds-truncate">{{p.Offer}}</td>
+			<td class="slds-truncate">{{p.OfferCode}}</td>
+			<td class="slds-truncate">{{p.Discount}}</td>
+			<td class="slds-truncate">{{p.Active}}</td>
+			<td class="slds-truncate">{{p.EndDate}}</td>
+		</tr>
+	</tbody>
+
+</table>
+
+</div>
+</script>
+</body>
+
+<style>
+
+.columProp{
+background-color: #57a708;
+color: White;
+font-family: 'tlightregular' !important;
+font-size: 15px;
+text-align: left;
+
+
+}
+.rowProp {
+border: 1px solid;
+border-color: #f5f6f7; 
+text-align: left; 
+
+}
+.rowPropin{
+text-align: left
+font-family: 'tlightregular' !important;
+font-size: 16px;
+padding-left:10px;
+padding-right:10px;
+
+} 
+.tableProp{
+border
+table-layout: auto;
+padding:10px;
+
+}
