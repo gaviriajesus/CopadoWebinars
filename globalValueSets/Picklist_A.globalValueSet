@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>BLUE</fullName>
+        <default>false</default>
+        <label>BLUE</label>
+    </customValue>
+    <customValue>
+        <fullName>GREEN</fullName>
+        <default>false</default>
+        <label>GREEN</label>
+    </customValue>
+    <customValue>
+        <fullName>YELLOW</fullName>
+        <default>false</default>
+        <label>YELLOW</label>
+    </customValue>
+    <masterLabel>Picklist_A</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

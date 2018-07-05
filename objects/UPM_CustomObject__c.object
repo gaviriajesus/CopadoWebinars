@@ -53,6 +53,19 @@
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
     <fields>
+        <fullName>Colors__c</fullName>
+        <externalId>false</externalId>
+        <label>Colors</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Picklist_A</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
         <fullName>UPM_CustomField__c</fullName>
         <externalId>false</externalId>
         <label>UPM_CustomField</label>
@@ -71,6 +84,34 @@
         <type>Text</type>
     </nameField>
     <pluralLabel>UPM_CustomObjects</pluralLabel>
+    <recordTypes>
+        <fullName>RT_A</fullName>
+        <active>true</active>
+        <label>RT_A</label>
+        <picklistValues>
+            <picklist>Colors__c</picklist>
+            <values>
+                <fullName>BLUE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>GREEN</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>RT_B</fullName>
+        <active>true</active>
+        <label>RT_B</label>
+        <picklistValues>
+            <picklist>Colors__c</picklist>
+            <values>
+                <fullName>YELLOW</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
     <searchLayouts/>
     <sharingModel>ReadWrite</sharingModel>
     <visibility>Public</visibility>
