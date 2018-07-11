@@ -1,0 +1,25 @@
+
+**/main/standardValueSets/SocialPostReviewedStatus.standardValueSet-meta.xml
+**/main/default/settings/Search.settings-meta.xml
+# More information: https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_exclude_source.htm
+**/main/settings/Search.settings-meta.xml
+**/main/default/cleanDataServices/*
+**/main/default/standardValueSets/OrderType.standardValueSet-meta.xml
+**/main/cleanDataServices/*
+**/main/settings/SocialCustomerServiceSettings.settings-meta.xml
+**/main/standardValueSets/IdeaMultiCategory.standardValueSet-meta.xml
+**/main/default/tabs/standard-home.tab-meta.xml
+**/main/default/standardValueSets/IdeaStatus.standardValueSet-meta.xml
+**/main/standardValueSets/OpportunityCompetitor.standardValueSet-meta.xml
+**/main/standardValueSets/IdeaStatus.standardValueSet-meta.xml
+**/main/default/standardValueSets/IdeaMultiCategory.standardValueSet-meta.xml
+#
+**/main/default/settings/SocialCustomerServiceSettings.settings-meta.xml
+# List files or directories below to ignore them when running force:source:push, force:source:pull, and force:source:status
+**/main/tabs/standard-home.tab-meta.xml
+**/main/standardValueSets/OrderType.standardValueSet-meta.xml
+force-app/main/default/.gitkeep
+**/main/default/standardValueSets/OpportunityCompetitor.standardValueSet-meta.xml
+.git
+package.xml
+**/main/default/standardValueSets/SocialPostReviewedStatus.standardValueSet-meta.xml
