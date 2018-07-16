@@ -1,6 +1,10 @@
 public class AccountOperations {
     public static Account setDefaultDescription(Account a) {
-        a.Description = 'Default Description';
+        a.Description = 'Default Descriptions';
         return a;
     }//Conflict1
+    
+    public static void s_method(){
+     //Part of 2nd US
+    }
 }
