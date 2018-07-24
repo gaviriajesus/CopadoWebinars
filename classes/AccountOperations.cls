@@ -8,5 +8,8 @@ public class AccountOperations {
      //Part of 2nd US
     }
 
+    public static void b_method(){
+     //Part of 2nd US
+    }
     
 }
